@@ -5,6 +5,7 @@ body {
 
 .top-bar{
     background-color: black;
+    size: 50px;
     color: white;
     padding: 10px;
     text-align: center;
