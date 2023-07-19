@@ -14,9 +14,6 @@
             background-color: black;
             color: white;
         }
-        .navbar-brand img {
-            filter: invert(100%);
-        }
 
         /* Custom styles for the hero section */
         .hero {
@@ -31,20 +28,46 @@
             font-size: 24px;
         }
 
-        /* Custom styles for other sections (adjust as needed) */
-        .section {
+        /* Custom styles for the introduction section */
+        .introduction {
             padding: 40px 0;
+            text-align: center;
         }
 
-        .section h2 {
+        .introduction img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
 
-        /* Footer styles */
-        footer {
-            background-color: #f2f2f2;
+        /* Custom styles for the contact section */
+        .contact {
+            padding: 40px 0;
             text-align: center;
-            padding: 20px 0;
+        }
+
+        .contact-icons {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .contact-icons li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .contact-icons a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 24px;
         }
     </style>
 
@@ -89,6 +112,14 @@
         </div>
     </section>
 
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <img src="img/your-image.jpg" alt="Your Image">
+            <p>This is a short paragraph about yourself and your artistic journey. You can customize this text as needed.</p>
+        </div>
+    </section>
+
     <!-- 3D Art/Modeling Section -->
     <section class="section" id="3d-art">
         <div class="container">
@@ -113,19 +144,15 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <!-- Add your brief bio and artistic journey here -->
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section class="section" id="contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <!-- Add your contact information and contact form here -->
+            <ul class="contact-icons">
+                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.pixiv.net/"><i class="fab fa-pixiv"></i></a></li>
+                <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
         </div>
     </section>
 
