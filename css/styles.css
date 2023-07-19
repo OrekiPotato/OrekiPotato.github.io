@@ -11,3 +11,11 @@ body {
     text-align: center;
     font-size: 18px;
 }
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
