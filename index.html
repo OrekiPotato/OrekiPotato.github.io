@@ -76,6 +76,31 @@
             justify-content: center;
             align-items: center;
         }
+        .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 24px;
+            margin: 10px;
+        }
+
     </style>
 
 </head>
@@ -167,16 +192,20 @@
     <div class="barrier"></div>
 
     <!-- Contact Section -->
-    <section class="section" id="contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <ul class="contact-icons">
-                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://www.pixiv.net/"><i class="fab fa-pixiv"></i></a></li>
-                <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a></li>
-            </ul>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.pixiv.net/"><i class="fab fa-pixiv"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                <!-- Placeholder icon for Pixiv -->
+                <a href="#"><i class="fas fa-question"></i></a>
+            </div>
         </div>
     </section>
+
+    <!-- Your other sections and content here -->
 
     <footer>
         <div class="container">
