@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'PS3'; /* You can give any name you want */
-    src: url('fonts/sce_ps3.ttf') format('truetype');
+    font-family: 'PS3';
+    src: url(D:\OrekiPotato.github.io\OrekiPotato.github.io\fonts\sce_ps3.ttf) format('truetype');
 }
 
 body {
