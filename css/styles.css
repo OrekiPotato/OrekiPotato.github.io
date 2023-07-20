@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(78, 68, 68);
-    font-family: "PS3", Arial;
+    font-family: PS3, Arial;
 }
 
 .top-bar{
@@ -23,5 +23,7 @@ body {
 
 @font-face {
     font-family: "PS3";
-    src: url('fonts/sce_ps3.ttf') format('ttf');
+    src: url("fonts/sce_ps3.ttf") format(".ttf");
+    font-weight: normal;
+    font-style: normal;
 }
