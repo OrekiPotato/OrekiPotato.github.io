@@ -1,13 +1,7 @@
-@font-face {
-    font-family: 'PS3';
-    src: url(D:\OrekiPotato.github.io\OrekiPotato.github.io\fonts\sce_ps3.ttf) format('truetype');
-}
-
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(78, 68, 68);
-    font-family: 'PS3';
 }
 
 .top-bar{
