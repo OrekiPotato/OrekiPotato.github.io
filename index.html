@@ -126,31 +126,6 @@
             width: 100%;
             z-index: 999; /* Make sure it appears on top of other content */
         }
-
-        .first-render {
-        position: relative;
-        overflow: hidden;
-        }
-
-        .first-render img {
-        display: block;
-        width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 1;
-        }
-
-        .first-render img::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Customize the gradient as per your preference */
-        z-index: 2;
-        }
-
     </style>
 
 </head>
