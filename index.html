@@ -25,7 +25,7 @@
 
         .navbar-nav .nav-link {
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             font-family: 'PS3';
         }
         /* Custom styles for the introduction section */
@@ -127,6 +127,30 @@
             z-index: 999; /* Make sure it appears on top of other content */
         }
 
+        .first-render {
+        position: relative;
+        overflow: hidden;
+        }
+
+        .first-render img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        }
+
+        .first-render img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Customize the gradient as per your preference */
+        z-index: 2;
+        }
+
     </style>
 
 </head>
@@ -165,7 +189,7 @@
     <!-- First Render Section -->
     <section class="first-render">
         <div class="first-render-container">
-            <p>Welcome! My name is Potato.</p>
+            <p>Welcome! This is Potato's attempt at revitalising his online portfolio. Hope this ain't too scuffed.</p>
             <img src="img/Render.png" alt="Your Image">        
         </div>
     </section>
