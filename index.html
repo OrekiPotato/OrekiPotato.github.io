@@ -112,6 +112,11 @@
             padding: 10px; /* Optional: Add some padding to the text for better aesthetics */
         }
 
+        .navbar-brand {
+            border: 2px solid #808080; /* Add a border around the navbar-brand */
+            border-radius: 5px; /* Optional: Add some border radius for rounded corners */
+            padding: 5px; /* Optional: Add padding to create some space between the border and image */
+        }
 
     </style>
 
@@ -221,5 +226,21 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // JavaScript to make the navbar sticky on scroll
+        $(document).ready(function () {
+            var navbar = $(".navbar");
+            var offset = navbar.offset().top;
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= offset) {
+                    navbar.addClass("sticky");
+                } else {
+                    navbar.removeClass("sticky");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
