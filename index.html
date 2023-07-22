@@ -93,10 +93,6 @@
         .first-render {
             position: relative;
             overflow: hidden;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("img/Render.png");
-            background-size: cover; /* Adjust background-size property as needed */
-            background-position: center; /* Adjust background-position property as needed */
-            background-repeat: no-repeat;
         }
 
         .first-render img {
@@ -110,11 +106,11 @@
         /* Style for the text inside the first-render section */
         .first-render p {
             position: absolute; /* Position the text absolutely within the section */
-            top: 50%; /* Position the text 50% from the top of the section */
-            left: 50%; /* Position the text 50% from the left of the section */
-            transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+            top: 0; /* Position the text 50% from the top of the section */
+            left: 0; /* Position the text 50% from the left of the section */
+            transform: translate(10px, -10px); /* Center the text horizontally and vertically */
             z-index: 3; /* Ensure the text appears in front of the image (higher z-index) */
-            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for better readability */
+            background-color: rgba(122, 122, 122, 0.8); /* Optional: Add a semi-transparent background for better readability */
             padding: 10px; /* Optional: Add some padding to the text for better aesthetics */
         }
 
