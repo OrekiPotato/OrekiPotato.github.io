@@ -90,17 +90,16 @@
             top: -3px;
         }
 
-        /* Style for the first-render section */
         .first-render {
-            position: relative; /* This is needed to position the text and image correctly */
-            overflow: hidden; /* This ensures the image doesn't overflow to other sections */
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* Set a specific height for the .first-render element */
         }
 
-        /* Style for the image inside the first-render section */
         .first-render img {
-            display: block; /* Ensure the image is treated as a block element */
-            width: 100%; /* Make the image width 100% of its container (the section) */
-            height: auto; /* This ensures the image maintains its aspect ratio */
+            display: block;
+            width: 100%;
+            height: auto;
             position: relative;
             z-index: 1;
         }
