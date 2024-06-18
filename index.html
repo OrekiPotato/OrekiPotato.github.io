@@ -54,6 +54,45 @@ body, html {
     background-attachment: scroll;
   }
 }
+
+.custom-border {
+  border: 2px solid #fff; /* Change to your desired border color and width */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 5px; /* Optional: Add padding around the image */
+  margin: .5%;
+}
+
+.custom-border img {
+    margin-top: 15px; /* Adjust margin as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+
+.custom-border iconify-icon {
+  margin-top: 15px; /* Adjust margin as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.custom-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .line-text::before,
+  .line-text::after {
+    content: "------------------------";
+    flex: 1;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+
+  /* Decrease the width of each column */
+  .w3-col.s4 {
+    width: 30%; /* Adjust width to ensure elements fit within the container */
+  }
 </style>
 </head>
 <body>
@@ -90,35 +129,66 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
+  <h3 class="w3-center custom-margin line-text">ABOUT ME</h3>
   <h2 class="w3-center"><em>I love 3D Modeling - Me in 2018</em></h2>
   <p>A self-taught 3D modeler </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="img/Hikari_Kurogane(Suit&Tie).png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Vyn Peregrine, The Necromancer</b></p><br>
+      <img src="img/Vyn (No mask).png" class="w3-round w3-image w3-hover-opacity" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>This is Vyn or Vincent, my Dungeons and Dragon character I created </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  <h3 class="w3-center custom-margin line-text" style="margin-top: 40px; margin-bottom: 40px;">SKILLS</h3>
+<div class="w3-row-padding w3-padding-32">
+  <!-- Left Container: Short Description -->
+  <div class="w3-half w3-padding-16">
+    <h4 class="w3-center">About My Skills</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lacus arcu. Sed vehicula varius lectus auctor viverra. Sed justo nibh, scelerisque ut elementum at, egestas quis ipsum. Maecenas ullamcorper gravida sem sit amet cursus.</p>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+
+  <!-- Right Container: Skills and Programs Grid -->
+  <div class="w3-half w3-padding-16">
+    <div class="w3-row-padding">
+      <div class="w3-col s4 w3-center custom-border">
+        <img src="img/icons8-solidworks-60.svg" alt="Solidworks" style="width:60%">
+        <p>Solidworks</p>
+        <p><em>2016 - 2022</em></p>
+      </div>
+      <div class="w3-col s4 w3-center custom-border">
+        <iconify-icon icon="logos:blender" width="60px" height="60px"></iconify-icon>
+        <p>Blender</p>
+        <p><em>2018 - Present</em></p>
+      </div>
+      <div class="w3-col s4 w3-center custom-border">
+        <img src="img/Houdini3D_icon.png" alt="Houdini" style="width:60%">
+        <p>Houdini</p>
+        <p><em>2019 - 2019</em></p>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col s4 w3-center custom-border">
+        <iconify-icon icon="simple-icons:unity" width="60px" height="60px"></iconify-icon>
+        <p>Unity</p>
+        <p><em>2023 - Present</em></p>
+      </div>
+      <div class="w3-col s4 w3-center custom-border">
+        <iconify-icon icon="devicon:maya" width="60px" height="60px"></iconify-icon>
+        <p>Autodesk MAYA</p>
+        <p><em>2023 - Present</em></p>
+      </div>
+      <div class="w3-col s4 w3-center custom-border">
+        <img src="img/Adobe_Substance_3D_icon.svg" alt="Substance Painter" style="width:62%">
+        <p>Substance 3D</p>
+        <p><em>2023 - Present</em></p>
+      </div>
+    </div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+</div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
