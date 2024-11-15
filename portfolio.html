@@ -141,6 +141,22 @@ body, html {
         flex-direction: column;
       }
     }
+
+  .program-icons {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center icons and text */
+  gap: 10px; /* Add spacing between icons and text */
+  font-size: 14px; /* Adjust text size if needed */
+}
+
+.program-icons iconify-icon {
+  vertical-align: middle; /* Ensure icons are aligned */
+}
+
+.program-icons span {
+  margin-left: 5px; /* Optional: Add spacing between the icon and its label */
+}
+
 </style>
 </head>
 <body>
@@ -205,10 +221,14 @@ body, html {
 <!-- Projects Grid -->
 <div class="w3-row-padding project-grid">
   <div class="w3-col s4 project-item">
-    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+    <div class="program-icons">
+      <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
+      <span>Blender</span>
+    </div>'>
   </div>
   <div class="w3-col s4 project-item">
-    <img src="img/Hikari_Kurogane(Suit&Tie).png" alt="Project 2" onclick="onClick(this)" data-title="Project Title 2" data-date="2022" data-description="Description of Project 2" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    <img src="img/Hikari_Kurogane(Suit&Tie).png" alt="Project 2" onclick="onClick(this)" data-title="Project Title 2" data-date="2022" data-description="Description of Project 2" data-programs='<<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
   </div>
   <div class="w3-col s4 project-item">
     <img src="img/Blender_proj_JapaneseSchool.jpg" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
