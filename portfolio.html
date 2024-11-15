@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -185,13 +185,15 @@ body, html {
     <div class="project-featured">
       <img src="img/Picture1.jpg" alt="Featured Project 1" width="100%" >
       <h4>Bürlinn</h4>
-      <p>Date: 2023</p>
+      <h5>Created for Final Game Modelling Assignment</h5>
+      <p>Year: 2023</p>
     </div>
 
     <div class="project-featured">
       <img src="img/ehNase.png" alt="Featured Project 2" width="100%">
       <h4>Chuckles</h4>
-      <p>Date: 2024</p>
+      <h5>Created for Global Gam Jam Singapore 2024</h5>
+      <p>Year: 2024</p>
     </div>
   </div>
 
@@ -203,7 +205,7 @@ body, html {
 <!-- Projects Grid -->
 <div class="w3-row-padding project-grid">
   <div class="w3-col s4 project-item">
-    <img src="img/Render.png" alt="Project 1" onclick="onClick(this)" data-title="Project Title 1" data-date="2023" data-description="Description of Project 1" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
   </div>
   <div class="w3-col s4 project-item">
     <img src="img/Hikari_Kurogane(Suit&Tie).png" alt="Project 2" onclick="onClick(this)" data-title="Project Title 2" data-date="2022" data-description="Description of Project 2" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
@@ -249,7 +251,7 @@ body, html {
 function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal-title").innerText = element.getAttribute("data-title");
-    document.getElementById("modal-date").innerText = "Date: " + element.getAttribute("data-date");
+    document.getElementById("modal-date").innerText = "Year: " + element.getAttribute("data-date");
     document.getElementById("modal-description").innerText = element.getAttribute("data-description");
     document.getElementById("modal-programs").innerHTML = "Programs Used: " + element.getAttribute("data-programs");
     document.getElementById("modal01").style.display = "block";
