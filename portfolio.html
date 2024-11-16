@@ -142,7 +142,7 @@ body, html {
       }
     }
 
-  .program-icons {
+.program-icons {
   display: flex; /* Use Flexbox */
   align-items: center; /* Vertically center icons and text */
   gap: 10px; /* Add spacing between icons and text */
@@ -221,14 +221,25 @@ body, html {
 <!-- Projects Grid -->
 <div class="w3-row-padding project-grid">
   <div class="w3-col s4 project-item">
-    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+    <img src="img/Picture1.jpg" alt="Project 1" onclick="onClick(this)" data-title="Burlinn" data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." data-programs='
+    <div class="program-icons">
+      <iconify-icon icon="devicon:maya" width="30px" height="30px"></iconify-icon> 
+      <span>MAYA</span>
+    </div>'>
+  </div>
+  <div class="w3-col s4 project-item">
+    <img src="img/ehNase.png" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
     <div class="program-icons">
       <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
       <span>Blender</span>
     </div>'>
   </div>
   <div class="w3-col s4 project-item">
-    <img src="img/Hikari_Kurogane(Suit&Tie).png" alt="Project 2" onclick="onClick(this)" data-title="Project Title 2" data-date="2022" data-description="Description of Project 2" data-programs='<<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+    <div class="program-icons">
+      <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
+      <span>Blender</span>
+    </div>'>
   </div>
   <div class="w3-col s4 project-item">
     <img src="img/Blender_proj_JapaneseSchool.jpg" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
@@ -243,8 +254,8 @@ body, html {
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">×</span>
+<div id="modal01" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-animate-opacity w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom modal-content w3-light-grey">
     <img id="img01">
     <div class="description">
