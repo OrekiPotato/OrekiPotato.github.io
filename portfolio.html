@@ -57,19 +57,42 @@ body, html {
 }
 
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: row;
 }
 
-.project-grid .project-item {
-  flex: 1 1 calc(33.33% - 20px);
-  box-sizing: border-box;
+
+.project-item {
+  background-color: #434343;
+  border-radius: 10px;
+  border: 2px solid rgb(7, 111, 0);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
 }
 
 .project-item img {
   width: 100%;
-  cursor: pointer;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-item .program-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-item .program-icons span {
+  margin-top: 5px;
+}
+
+.project-grid::before{
+  content: none;
 }
 
 .modal-content {
@@ -78,6 +101,8 @@ body, html {
   justify-content: center;
   flex-direction: row;
   background-color: #c5c5c5;
+  border: 2px solid rgb(31, 31, 31);
+  border-radius: 8px;
   padding: 20px;
   width: 80%;
   max-width: 1000px;
@@ -124,23 +149,29 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media (max-width: 768px) {
-      .project-featured, .modal-content {
-        flex-direction: column;
-      }
 
-      .project-featured img, .modal-content img {
-        width: 100%;
-        margin-bottom: 20px;
-      }
 
-      .project-featured .description, .modal-content .description {
-        max-width: 100%;
-      }
+  .project-featured, .modal-content {
+    flex-direction: column;
+  }
 
-      .project-featured-container {
-        flex-direction: column;
-      }
-    }
+  .project-featured img, .modal-content img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-featured .description, .modal-content .description {
+    max-width: 100%;
+  }
+
+  .project-featured-container {
+    flex-direction: column;
+  }
+
+  .project-item {
+    flex: 0 0 48%; /* Adjust to two items per row on smaller screens */
+  }
+}
 
 .program-icons {
   display: flex; /* Use Flexbox */
@@ -153,8 +184,19 @@ body, html {
   vertical-align: middle; /* Ensure icons are aligned */
 }
 
+.program-icons img {
+  margin-right: 0; /* Remove any right margin from the image */
+  vertical-align: middle; /* Align the image with the text vertically */
+}
+
 .program-icons span {
   margin-left: 5px; /* Optional: Add spacing between the icon and its label */
+}
+
+@media (max-width: 480px) {
+  .project-item {
+    flex: 0 0 100%; /* Full-width items on very small screens */
+  }
 }
 
 </style>
@@ -199,14 +241,14 @@ body, html {
   <!-- Featured Projects -->
   <div class="project-featured-container">
     <div class="project-featured">
-      <img src="img/Picture1.jpg" alt="Featured Project 1" width="100%" >
+      <img src="img/Picture1.jpg" alt="Featured Project 1" width="100%" style="border-radius: 5px;">
       <h4>Bürlinn</h4>
       <h5>Created for Final Game Modelling Assignment</h5>
       <p>Year: 2023</p>
     </div>
 
     <div class="project-featured">
-      <img src="img/ehNase.png" alt="Featured Project 2" width="100%">
+      <img src="img/ehNase.png" alt="Featured Project 2" width="100%" style="border-radius: 5px;">
       <h4>Chuckles</h4>
       <h5>Created for Global Gam Jam Singapore 2024</h5>
       <p>Year: 2024</p>
@@ -220,36 +262,39 @@ body, html {
   <br>
 <!-- Projects Grid -->
 <div class="w3-row-padding project-grid">
-  <div class="w3-col s4 project-item">
-    <img src="img/Picture1.jpg" alt="Project 1" onclick="onClick(this)" data-title="Burlinn" data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." data-programs='
+  <div class="project-item">
+    <img src="img/Picture1.jpg" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="Burlinn" data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." data-programs='
     <div class="program-icons">
       <iconify-icon icon="devicon:maya" width="30px" height="30px"></iconify-icon> 
       <span>MAYA</span>
+      <img src="img/Adobe_Substance_3D_icon.svg" alt="Substance Painter" style="width:7%">
+      <span>Substance Painter</span>
     </div>'>
   </div>
-  <div class="w3-col s4 project-item">
-    <img src="img/ehNase.png" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
+  <div class="project-item">
+    <img src="img/ehNase.png" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
     <div class="program-icons">
       <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
       <span>Blender</span>
     </div>'>
   </div>
-  <div class="w3-col s4 project-item">
-    <img src="img/Blender_proj_TheDanceBallroom.png" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+  <div class="project-item">
+    <img src="img/Blender_proj_TheDanceBallroom.png" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
     <div class="program-icons">
       <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
       <span>Blender</span>
     </div>'>
   </div>
-  <div class="w3-col s4 project-item">
-    <img src="img/Blender_proj_JapaneseSchool.jpg" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+  <div class="project-item">
+    <img src="img/Blender_proj_JapaneseSchool.jpg" style="border-radius: 5px;" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
   </div>
-  <div class="w3-col s4 project-item">
-    <img src="img/Render.png" alt="Project 4" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+  <div class="project-item">
+    <img src="img/Render.png" style="border-radius: 5px;" alt="Project 4" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
   </div>
-  <div class="w3-col s4 project-item">
-    <img src="img/Render.png" alt="Project 5" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+  <div class="project-item">
+    <img src="img/Render.png" style="border-radius: 5px;" alt="Project 5" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
   </div>
+  
 </div>
 </div>
 
@@ -257,7 +302,7 @@ body, html {
 <div id="modal01" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-animate-opacity w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom modal-content w3-light-grey">
-    <img id="img01">
+    <img id="img01" style="border-radius: 5px;">
     <div class="description">
       <h4 id="modal-title"></h4>
       <p id="modal-date"></p>
