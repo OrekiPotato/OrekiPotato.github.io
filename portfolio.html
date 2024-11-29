@@ -31,7 +31,7 @@ body, html {
 }
 
 .bgimg-2 {
-  background-image: url("img/p2.jpg");
+  background-image: url("img/Blender_proj_TheDanceBallroom.png");
   min-height: 400px;
 }
 
@@ -101,7 +101,7 @@ body, html {
   justify-content: center;
   flex-direction: row;
   background-color: #c5c5c5;
-  border: 2px solid rgb(31, 31, 31);
+  border: 20px solid rgb(31, 31, 31);
   border-radius: 8px;
   padding: 20px;
   width: 80%;
@@ -230,84 +230,89 @@ body, html {
 <!-- Header with Parallax Effect -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="potato-hero">
   <div class="w3-display-middle w3-center">
-    <span class="w3-xxlarge w3-text-white w3-wide">MY PROJECTS</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
 </header>
 
-<div class="w3-content w3-container w3-padding-64" id="projects">
+<div class="w3-content w3-container w3-padding-64" id="featured-projects">
   <h3 class="w3-center">FEATURED</h3>
-  <p class="w3-center"><em>Here are some of my latest works.<br> Click on the images for more information</em></p>
+  <p class="w3-center"><em>Here are some of my latest and most proudest works.<br> Click on the images for more information</em></p>
 
   <!-- Featured Projects -->
   <div class="project-featured-container">
     <div class="project-featured">
-      <img src="img/Picture1.jpg" alt="Featured Project 1" width="100%" style="border-radius: 5px;">
+      <img src="img/Picture1.jpg" alt="Featured Project 1" width="100%" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);">
       <h4>Bürlinn</h4>
       <h5>Created for Final Game Modelling Assignment</h5>
       <p>Year: 2023</p>
     </div>
 
     <div class="project-featured">
-      <img src="img/ehNase.png" alt="Featured Project 2" width="100%" style="border-radius: 5px;">
+      <img src="img/ehNase.png" alt="Featured Project 2" width="100%" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);">
       <h4>Chuckles</h4>
       <h5>Created for Global Gam Jam Singapore 2024</h5>
       <p>Year: 2024</p>
     </div>
   </div>
+</div>
 
-  <br>
-  <br>
-  <h3 class="w3-center">ALL PROJECTS</h3>
-  <br>
-  <br>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">All PROJECTS</span>
+  </div>
+</div>
+
 <!-- Projects Grid -->
-<div class="w3-row-padding project-grid">
-  <div class="project-item">
-    <img src="img/Picture1.jpg" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="Burlinn" data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." data-programs='
-    <div class="program-icons">
-      <iconify-icon icon="devicon:maya" width="30px" height="30px"></iconify-icon> 
-      <span>MAYA</span>
-      <img src="img/Adobe_Substance_3D_icon.svg" alt="Substance Painter" style="width:7%">
-      <span>Substance Painter</span>
-    </div>'>
+<div class="w3-content w3-container w3-padding-64" id="featured-projects">
+  <div class="w3-row-padding project-grid">
+    <div class="project-item">
+      <img src="img/Picture1.jpg" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 1" onclick="onClick(this)" data-title="Burlinn" data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." data-programs='
+      <div class="program-icons">
+        <iconify-icon icon="devicon:maya" width="30px" height="30px"></iconify-icon> 
+        <span>MAYA</span>
+        <img src="img/Adobe_Substance_3D_icon.svg" alt="Substance Painter" style="width:7%">
+        <span>Substance Painter</span>
+      </div>' data-website="https://orekipotato.itch.io/game-level-viewer-burlinn">
+    </div>
+    <div class="project-item">
+      <img src="img/ehNase.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
+      <div class="program-icons">
+        <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
+        <span>Blender</span>
+      </div>'>
+    </div>
+    <div class="project-item">
+      <img src="img/Blender_proj_TheDanceBallroom.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+      <div class="program-icons">
+        <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
+        <span>Blender</span>
+      </div>'>
+    </div>
+    <div class="project-item">
+      <img src="img/Blender_proj_JapaneseSchool.jpg" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    </div>
+    <div class="project-item">
+      <img src="img/Blender_proj_TheMeeting.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 4" onclick="onClick(this)" data-title="The Meeting" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    </div>
+    <div class="project-item">
+      <img src="img/Render.png" style="border-radius: 5px;" alt="Project 5" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+    </div>
   </div>
-  <div class="project-item">
-    <img src="img/ehNase.png" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
-    <div class="program-icons">
-      <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
-      <span>Blender</span>
-    </div>'>
-  </div>
-  <div class="project-item">
-    <img src="img/Blender_proj_TheDanceBallroom.png" style="border-radius: 5px;" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
-    <div class="program-icons">
-      <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
-      <span>Blender</span>
-    </div>'>
-  </div>
-  <div class="project-item">
-    <img src="img/Blender_proj_JapaneseSchool.jpg" style="border-radius: 5px;" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
-  </div>
-  <div class="project-item">
-    <img src="img/Render.png" style="border-radius: 5px;" alt="Project 4" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
-  </div>
-  <div class="project-item">
-    <img src="img/Render.png" style="border-radius: 5px;" alt="Project 5" onclick="onClick(this)" data-title="Project Title 4" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
-  </div>
-  
 </div>
-</div>
+
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-animate-opacity w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom modal-content w3-light-grey">
+  <div class="w3-modal-content w3-animate-zoom modal-content w3-light-grey" style="height: 50%;">
     <img id="img01" style="border-radius: 5px;">
     <div class="description">
       <h4 id="modal-title"></h4>
       <p id="modal-date"></p>
       <p id="modal-description"></p>
       <p id="modal-programs"></p>
+      <p id="modal-website"></p>
     </div>
   </div>
 </div>
@@ -330,6 +335,7 @@ function onClick(element) {
     document.getElementById("modal-date").innerText = "Year: " + element.getAttribute("data-date");
     document.getElementById("modal-description").innerText = element.getAttribute("data-description");
     document.getElementById("modal-programs").innerHTML = "Programs Used: " + element.getAttribute("data-programs");
+    document.getElementById("modal-website").innerHTML = "For more info, visit: " + element.getAttribute("data-website");
     document.getElementById("modal01").style.display = "block";
   }
 
