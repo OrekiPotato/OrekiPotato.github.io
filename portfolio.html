@@ -41,7 +41,11 @@ body, html {
 }
 
 .w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+
+.w3-hover-opacity {
+  cursor: pointer; 
+  transition: opacity 0.3s ease-in-out;
+}
 
 #potato-hero {
   padding-top: 100px;
@@ -113,9 +117,11 @@ body, html {
 .modal-content img {
   max-width: 45%;
   margin-right: 20px;
+  filter: drop-shadow(3px 3px 2px #000000);
 }
 
 .modal-content .description {
+  font-size: medium;
   text-align: left;
   max-width: 50%;
 }
@@ -137,6 +143,7 @@ body, html {
       margin-bottom: 20px;
       background-color: #1a1a1a;
       text-align: center;
+      filter: drop-shadow(4px 4px 2px #000000);
     }
 
 .project-featured img {
@@ -273,7 +280,7 @@ body, html {
   <div style="background-image: linear-gradient(0deg,#110F0F 0%,transparent 50%); height: 300px; position: absolute; bottom: 100%; left: -50%; right: 0; width: 10000vw;" ></div>
   <div class="w3-row-padding project-grid">
     <div class="project-item">
-      <img src="img/Picture1.jpg" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" 
+      <img src="img/Picture1.jpg" class="w3-hover-opacity" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" 
            alt="Project 1" onclick="onClick(this)" data-title="Burlinn" 
            data-date="2023" data-description="This project represents the culmination of my Game Modelling module in school. For our final assignment, we were tasked with creating a complete game level based on a chosen theme. I selected Dystopian as my theme, crafting an immersive environment that captures the essence of a bleak and futuristic world." 
            data-programs='
