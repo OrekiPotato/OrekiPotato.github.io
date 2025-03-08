@@ -293,25 +293,51 @@ body, html {
            data-website="https://orekipotato.itch.io/game-level-viewer-burlinn">
       
       <!-- Placeholder for clickable link -->
-      <p id="project-link"></p>
+      
+      <p id="project-link">
+        <h4><b>Bürlinn</b></h4>
+        <a href="https://orekipotato.itch.io/game-level-viewer-burlinn" target="_blank">Visit Project</a>
+      </p>
     </div>
     <div class="project-item">
-      <img src="img/ehNase.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 1" onclick="onClick(this)" data-title="Chuckles" data-date="2024" data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" data-programs='
+      <img src="img/ehNase.png" class="w3-hover-opacity" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" 
+      alt="Project 2" onclick="onClick(this)" data-title="Chuckles" data-date="2024" 
+      data-description="This project was created during the Global Game Jam 2024, held in January. With only 48 hours to develop a game, our team collaborated intensively to craft a unique experience based on the theme 'Make Me Laugh.'" 
+      data-programs='
       <div class="program-icons">
         <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
         <span>Blender</span>
-      </div>'>
+      </div>' 
+          data-website="https://notlivingstudios.itch.io/chuckles-ggj-2024">
+      <p id="project-link">
+        <h4><b>Chuckles</b></h4>
+        <a href="https://notlivingstudios.itch.io/chuckles-ggj-2024" target="_blank">Visit Project</a>
+      </p>
     </div>
+
+
     <div class="project-item">
-      <img src="img/Blender_proj_TheDanceBallroom.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 1" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
+      <img src="img/Blender_proj_TheDanceBallroom.png" class="w3-hover-opacity" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 3" onclick="onClick(this)" data-title="The Dance" data-date="2023" data-description="One of the main scenes from my personal project series, Xoza'ir Narrative. Depicts a grand throne room that includes a large space for dancing, similar to a grand ballroom." data-programs='
       <div class="program-icons">
         <iconify-icon icon="logos:blender" width="30px" height="30px"></iconify-icon> 
         <span>Blender</span>
-      </div>'>
+      </div>'
+        data-website="https://www.pixiv.net/en/artworks/108995022">
+
+      <p id="project-link">
+        <h4><b>The Dance</b></h4>
+        <a href="https://www.pixiv.net/en/artworks/108995022" target="_blank">Visit Project</a>
+      </p>
     </div>
+
     <div class="project-item">
-      <img src="img/Blender_proj_JapaneseSchool.jpg" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 3" onclick="onClick(this)" data-title="Project Title 3" data-date="2021" data-description="Description of Project 3" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+      <img src="img/Blender_proj_JapaneseSchool.jpg" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 4" onclick="onClick(this)" data-title="Hiroshima Municipal Motomachi Senior High School" data-date="2021" data-description="My early attempt at utilizing Blender's Compositing " data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
+      <p id="project-link">
+        <h5><b>Hiroshima Municipal Motomachi Senior High School</b></h5>
+        <a href="https://www.pixiv.net/en/artworks/99651150" target="_blank">Visit Project</a>
+      </p>
     </div>
+
     <div class="project-item">
       <img src="img/Blender_proj_TheMeeting.png" style="border-radius: 5px; border: 3px solid rgb(0, 0, 0);" alt="Project 4" onclick="onClick(this)" data-title="The Meeting" data-date="2020" data-description="Description of Project 4" data-programs='<i class="fa fa-blender"></i> <i class="fa fa-solidworks"></i> <i class="fa fa-unity"></i>'>
     </div>
@@ -387,25 +413,6 @@ function toggleFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
-// Get the image element
-const projectImage = document.querySelector('.project-item img');
-  
-  // Get the data-website attribute value
-  const projectLink = projectImage.getAttribute('data-website');
-
-  // Get the placeholder element where the link will be inserted
-  const linkContainer = document.getElementById('project-link');
-
-  // Create an anchor element and set its attributes
-  const linkElement = document.createElement('a');
-  linkElement.href = projectLink;
-  linkElement.target = "_blank"; // Open in new tab
-  linkElement.textContent = "Visit Project";
-
-  // Append the link to the placeholder
-  linkContainer.appendChild(linkElement);
-
 </script>
 
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
