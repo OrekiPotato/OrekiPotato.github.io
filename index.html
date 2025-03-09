@@ -34,7 +34,7 @@
   
   .bgimg-2 {
     background-image: url('img/Render.png');
-    min-height: 400px;
+    min-height: 300px;
   }
   
   .bgimg-3 {
@@ -43,10 +43,10 @@
   }
 
   .bgimg-4 {
-    background-image: url('img/GAM_Ve.png');
+    background-image: url('img/Blender_proj_TheMeeting.png');
     background-position: center;
-    z-index: 100;
-    min-height: 400px;
+    background-attachment: fixed; /* Enables the parallax effect */
+    min-height: 300px;
   }
   
   .w3-wide {
@@ -55,6 +55,7 @@
   
   .w3-hover-opacity {
     cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
   }
   
   #potato-hero {
@@ -187,7 +188,7 @@
   </div>
 </div>
 
-<div style="position: relative;"; class="bgimg-4 w3-display-container w3-opacity-min" >
+<div class="bgimg-4 w3-display-container w3-opacity-min" >
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">SKILLS</span>
   </div>
@@ -265,7 +266,7 @@
     </div>
 
     <div style="filter: drop-shadow(4px 4px 2px #000000);" class="w3-col m3">
-      <img src="img/Render.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Road">
+      <img src="img/Blender_proj_TheMeeting.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Meeting">
     </div>
 
     
